@@ -1,0 +1,53 @@
+<html>
+
+
+<head>
+<title> week3_practice </title>
+<meta charset="utf-8">
+</head>
+
+<body text ="#000000" bgcolor="#11DFF0"  >
+
+<form action="result.php" method="post">
+
+<p>
+請輸入您的id:<input type="text" name="id"><br/>
+請輸入您的password:<input type="password" name="pwd"><br/>
+
+請選擇您的性別:
+<input type="radio" name="gender" value="male">男
+<input type="radio" name="gender" value="female">女<br/>
+</p>
+
+
+請選擇您的興趣:<br/>
+<input type="checkbox" name="swim" >游泳<br/>
+<input type="checkbox" name="ball" >打球<br/>
+<input type="checkbox" name="sleep" >睡覺<br/>
+<br/>
+
+
+請選擇您的住址:
+<!-- <select name="city"> -->
+<select name="city[]" multiple>
+<option value="taipei">台北
+<option value="new taipei" checked>新北
+<option value="taichung">台中
+<option value="kaohsiung">高雄
+</select>
+<br/>
+
+
+您的建議:<br/>
+<textarea name="comment" cols="40" rows="15"></textarea>
+<br/>
+
+
+
+<input type="submit">
+<input type="reset"><br/>
+</form>
+
+
+</body>
+ </html>
